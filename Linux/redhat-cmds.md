@@ -47,5 +47,36 @@
 > lspci
 ```
 
-#### 
+#### Check network connections
+```
+> netstat -na | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}'
+```
 
+#### View default gateway
+```
+> route -n
+> netstat -r
+> traceroute
+```
+#### List open files
+```
+> lsof -i:22
+```
+
+#### Add persistent routes
+```
+> route add -net 172.16.6.0 netmask 255.255.255.0 gw 172.16.2.25
+> vim /etc/sysconfig/network-scripts/route-eth0
+```
+
+#### Check system log
+```
+> vim /var/log/messages
+> vim /var/log/secure
+# /var/log/wtmp
+> last
+# /var/log/lastlog
+> lastlog
+# system boot info /var/log/dmesg
+> dmesg |grep error
+```
