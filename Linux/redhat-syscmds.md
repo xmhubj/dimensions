@@ -87,3 +87,17 @@ inotify + rsync: suitable for small files synchronization.
 inotify can be able to monitor file system events.
 
 ```
+
+#### Check max open files
+```
+# one process
+ulimit -a
+# system limits
+cat /proc/sys/fs/file-max
+# current open files 
+cat /proc/sys/fs/file-nr
+# modify
+/etc/sysctl.conf
+/etc/security/limits.conf
+/etc/rc.local  --> ulimit -SHn 65535
+```
