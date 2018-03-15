@@ -80,3 +80,10 @@
 # system boot info /var/log/dmesg
 > dmesg |grep error
 ```
+
+#### Data real-time synchronization
+```
+inotify + rsync: suitable for small files synchronization.
+inotify can be able to monitor file system events.
+
+```
