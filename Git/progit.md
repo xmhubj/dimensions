@@ -4,7 +4,7 @@
 <img src="images/data_store_vcs.jpg" width="60%" height="60%"/>
 
 - A stream of snapshots
-![](images/data_store_git.jpg)
+<img src="images/data_store_git.jpg" width="60%" height="60%"/>
 
 
 ### The three states
@@ -19,6 +19,6 @@
 
 ### The basic workflow
 
-![](images/git_states.jpg)
+<img src="images/git_states.jpg" width="60%" height="60%"/>
 
 
