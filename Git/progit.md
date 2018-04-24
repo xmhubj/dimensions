@@ -17,6 +17,8 @@
 - Staging area
 - Git directory
 
-###
+### The basic workflow
 
-[[ images/git_states.jpg]] 
+![](images/git_states.jpg)
+
+
