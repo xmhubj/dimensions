@@ -1,7 +1,7 @@
 ### The way Git thinks about its data
 
 - A set of files and changes made to each file over time
-<img src="images/data_store_vcs.jpg" width="50%"/>
+<img src="images/data_store_vcs.jpg" width="60%" height="60%"/>
 
 - A stream of snapshots
 ![](images/data_store_git.jpg)
