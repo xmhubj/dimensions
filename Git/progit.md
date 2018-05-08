@@ -25,14 +25,18 @@
 
 #### git config
 There are three different places to store git settings:
-- /etc/gitconfig: for every users on the system, `--system`
-- ~/.gitconfig or ~/.config/git/config: specific to your user, `--global`
-- <working_dir>/.git/config: specific to the single repository
+```
+1. /etc/gitconfig: for every users on the system, `--system`
+2. ~/.gitconfig or ~/.config/git/config: specific to your user, `--global`
+3. <working_dir>/.git/config: specific to the single repository
+```
 
 #### git diff
+```
 - git diff
 - git diff --staged/--cached
 - git difftool, run `git difftool --tool-help` to see what is available on your system.
+```
 
 #### git mv
 
@@ -42,7 +46,6 @@ There are three different places to store git settings:
 
 #### git commit --amend
 Undoing Things: the second commit replaces the results of the first.
-
 ```
 git commit -m "initial commit"
 git add forgotten_file
@@ -55,6 +58,17 @@ Unstaging a Staged file:
 #### git checkout -- \<file\>
 Unmodifying a Modified file: git copys another file over it.
   
+#### git remote
+Working with remotes:
+```
+git remote
+git remote -v
+git remote add <shortname> <url>
+git fetch <remote-name/shortname>, i.e., git fetch origin
 
+git fetch vs. git pull
+fetch: downloads the data to local repository, does't merge it
+pull: fetch and merge
+```
 
 
