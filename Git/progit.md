@@ -49,10 +49,10 @@ git add forgotten_file
 git commit --amend
 ```
 
-#### git reset HEAD <file>
+#### git reset HEAD \<file\>
 Unstaging a Staged file: 
 
-#### git checkout -- <file>
+#### git checkout -- \<file\>
 Unmodifying a Modified file: git copys another file over it.
   
 
