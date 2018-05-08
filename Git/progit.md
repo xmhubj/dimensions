@@ -22,3 +22,9 @@
 <img src="images/git_states.jpg" width="60%" height="60%"/>
 
 
+### Git config
+There are three different places to store git settings:
+- /etc/gitconfig: for every users on the system, `--system`
+- ~/.gitconfig or ~/.config/git/config: specific to your user, `--global`
+- <working_dir>/.git/config: specific to the single repository
+
