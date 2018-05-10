@@ -66,9 +66,16 @@ git remote -v
 git remote add <shortname> <url>
 git fetch <remote-name/shortname>, i.e., git fetch origin
 
-git fetch vs. git pull
-fetch: downloads the data to local repository, does't merge it
-pull: fetch and merge
+# git fetch vs. git pull
+# fetch: downloads the data to local repository, does't merge it
+# pull: fetch and merge
+
+# To see more information about a particular remote
+git remote show [remote-name]
+git remote show origin
+
+git remote rename current-name tobe-name
+git remote rm [remote-name]
 ```
 
 
