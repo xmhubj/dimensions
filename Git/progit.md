@@ -78,4 +78,22 @@ git remote rename current-name tobe-name
 git remote rm [remote-name]
 ```
 
+#### git tag
+
+```
+# Annotated Tags
+git tag -a v1.4 -m "my version 1.4"
+git tag
+git show v1.4
+
+# Lightweight Tags
+git tag v1.4-lw
+git show v1.4-lw
+
+git push origin v1.4
+git push origin --tags
+
+# Checking out tags
+git checkout -b version1.4 v1.4
+```
 
