@@ -105,3 +105,17 @@ git push origin --tags
 git checkout -b version1.4 v1.4
 ```
 
+#### Git aliases
+
+```
+$ git config --global alias.co checkout
+$ git config --global alias.br branch
+$ git config --global alias.ci commit
+$ git config --global alias.st status
+$ git config --global alias.unstage 'reset HEAD --'
+$ git config --global alias.last 'log -1 HEAD'
+
+# run an external command, rather than a Git subcommand
+# you start the command with a ! character
+$ git config --global alias.visual '!gitk'
+```
