@@ -17,6 +17,8 @@
 
 ### The three main sections
 - Working directory
+  - tracked: files that were in the last snapshot
+  - untracked: any files in your working directory that were not in the last snapshot
 - Staging area
 - Git directory
 
