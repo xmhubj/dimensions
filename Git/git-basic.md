@@ -1,3 +1,7 @@
+### History of Version Control System
+
+local VCSs --> Centralized VCSs --> Distributed VCSs
+
 ### The way Git thinks about its data
 
 - A set of files and changes made to each file over time
