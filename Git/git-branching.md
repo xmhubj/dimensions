@@ -15,3 +15,4 @@ When you create a commit by `git commit`:
 - Stores those tree objects
 - Creates a commit object that has metadata and a pointer to the tree
 
+<img src="images/commit-tree-blob.jpg" width="60%" height="60%"/>
