@@ -1,6 +1,6 @@
-### History of Version Control System
+### History of Version Control Systems
 
-local VCSs --> Centralized VCSs --> Distributed VCSs
+Local VCSs --> Centralized VCSs --> Distributed VCSs
 
 ### The way Git thinks about its data
 
