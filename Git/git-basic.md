@@ -1,6 +1,5 @@
 ### History of Version Control Systems
-
-Local VCSs --> Centralized VCSs --> Distributed VCSs
+> Local VCSs --> Centralized VCSs --> Distributed VCSs
 
 ### The way Git thinks about its data
 
@@ -25,7 +24,10 @@ Local VCSs --> Centralized VCSs --> Distributed VCSs
 
 <img src="images/git_states.jpg" width="60%" height="60%"/>
 
-### Common-used command
+### Git has integrity
+> Everything in Git is check-summed by SHA-1 hash, a 40-character string composed of hexadecimal characters.
+
+### Common-used commands
 
 #### git config
 There are three different places to store git settings:
