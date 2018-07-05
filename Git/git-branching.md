@@ -16,3 +16,8 @@ When you create a commit by `git commit`:
 - Creates a commit object that has metadata and a pointer to the tree
 
 <img src="images/commit-tree-blob.jpg" width="60%" height="60%"/>
+
+### How does Git know that what branch you're currently on?
+> It keeps a special pointer called `HEAD` to the local branch. The `HEAD` branch moves forward when a commit is made.
+
+<img src="images/head-branch.jpg" width="60%" height="60%"/>
