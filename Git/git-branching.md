@@ -21,3 +21,17 @@ When you create a commit by `git commit`:
 > It keeps a special pointer called `HEAD` to the local branch. The `HEAD` branch moves forward when a commit is made.
 
 <img src="images/head-branch.jpg" width="60%" height="60%"/>
+
+
+### Branching Workflows
+
+- Long-Running Branches
+  > It has several branches that are always open and that you use for different stages of your development cycle. Your branches are at various level of stability.
+  - Have only code that is entirely stable in `master` branch
+  - Have another parallel branch named `develop` or `next`
+  - Have many `topic` branches
+  
+<img src="images/silo-view.jpg" width="60%" height="60%"/>
+  
+- Topic Branches
+  > A short-lived branch that you create and use for a single particular feature or related work.
