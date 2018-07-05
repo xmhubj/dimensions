@@ -35,3 +35,13 @@ When you create a commit by `git commit`:
   
 - Topic Branches
   > A short-lived branch that you create and use for a single particular feature or related work.
+
+- Remote Branches
+  > Remote references are references in your remote repository, includuing branches, tags, and so on.
+  
+<img src="images/remote-branch.jpg" width="60%" height="60%"/>
+  
+- Tracking branches
+> Tracking branches are local branches that have a direct relatioship to a remote branch. 
+
+- 
