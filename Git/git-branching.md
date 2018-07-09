@@ -42,6 +42,17 @@ When you create a commit by `git commit`:
 <img src="images/remote-branch.jpg" width="60%" height="60%"/>
   
 - Tracking branches
-> Tracking branches are local branches that have a direct relatioship to a remote branch. 
+> Tracking branches are local branches that have a direct relationship to a remote branch. 
 
+- The Perils of Rebasing
+> Do not rebase commits that exist outside your repository
+  - Duplicate commit logs can confuse people
+  - Reintroduce all those rebased commits back to central server.
+  - Commit log is a record of what actually happened or the story of how your project was made.
+  
+### Forked Public Project
+
+- You don't have the permissions to directly update branches.
+- Clone/Fork the main repository
+- Add the forked repository as a second remote
 - 
