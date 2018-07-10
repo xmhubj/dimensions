@@ -1,11 +1,13 @@
 ### Variables
-- Underscore in interactive mode
+- Underscore `_` in interactive mode
 ```
 >>> 5 * 5
 25
 >>> _
 25
 ```
+
+- `sys` args
 
 ### Reverse a word
 
