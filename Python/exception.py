@@ -15,7 +15,7 @@ def portfolio_cost(filename):
             try:
                 row[2] = int(row[2])
                 row[3] = float(row[3])
-            except ValueError as err:
+            except ValueError as err:  # Exception for catching all errors
                 print('Row:', rowno, 'Bad row:', row)
                 print('Row:', rowno, 'Reason:', err)
                 continue
