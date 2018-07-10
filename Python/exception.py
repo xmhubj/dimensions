@@ -2,10 +2,13 @@
 
 import csv
 
-def portfolio_cost(filename):
+def portfolio_cost(filename, errors='warn'):
     '''
     Computes total shares*price for a CSV file
     '''
+    
+    if errors not in {'warn', 'silent', 'raise'}:
+        raise ValueError("errors must be one of 'warn', 'silent', 'raise'")
     
     total = 0.0
     with open(filename, 'r') as f:
@@ -15,13 +18,18 @@ def portfolio_cost(filename):
             try:
                 row[2] = int(row[2])
                 row[3] = float(row[3])
-            except ValueError as err:  # Exception for catching all errors
-                print('Row:', rowno, 'Bad row:', row)
-                print('Row:', rowno, 'Reason:', err)
-                continue
+            except ValueError as err:         # Exception for catching all errors
+                if erros == 'warn':
+                    print('Row:', rowno, 'Bad row:', row)
+                    print('Row:', rowno, 'Reason:', err)
+                elif errors = 'raise':
+                    raise           # Reraise the last exception
+                else:
+                    pass
+                continue            # Skips to the next row
             
             total += row[2] * row[3]
         return total
 
-total = portfolio_cost('data/portfolio.csv')
+total = portfolio_cost('data/portfolio.csv', errors='silent')
 print('Total cost:', total)
