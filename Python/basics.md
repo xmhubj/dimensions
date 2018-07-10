@@ -40,10 +40,35 @@ word_set = set(word_list)
 https://matplotlib.org/tutorials/index.html
 > apt-get install python3-matplotlib
 
-
-### urllib -- URL handling
-
 ### Python Debugging
 - python -i <python_script.py>
 - import pdb
 - pdb.pm()
+
+### Sorting and Grouping
+```
+# portfolio is a list of dictionary objects
+portfolio.sort()
+>>> unorderable types
+
+def holding_name(holding):
+    return holding['name']    
+portfolio.sort(key=holding_name)
+
+portfolio.sort(key=lambda holding: hodling['name'])
+
+# lambda function
+a = lambda x, y: x + y
+a(2, 3)
+>>> 5
+
+min(portfolio, key=lambda holding: holding['price'])
+max(portfolio, key=lambda holding: holding['price'])
+
+import itertools
+for name, items in itertools.groupby(portfolio, key=lambda hodling: holding['name']):
+   print('NAME: ', name)
+   for item in items:
+       print('      ', it)
+
+```
