@@ -25,4 +25,21 @@ word_set = set(word_list)
 [elt for elt in word_list if "UU" in elt]
 ```
 
+### Matplotlib library
+> apt-get install python3-matplotlib
 
+```
+from matplotlib import pyplot
+import random
+
+x_values = [0, 4, 7, 20, 22, 25]
+y_values = [random.randint(0, 30) for elt in x_values]
+
+pyplot.plot(x_values, y_values, "o-")
+
+pyplot.xlabel("Time")
+pyplot.ylabel("Values")
+pyplot.title("Test plot")
+
+pyplot.show()
+```
