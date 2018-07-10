@@ -1,12 +1,10 @@
 ### Variables
-- Underscore
+- Underscore in interactive mode
 ```
 >>> 5 * 5
 25
 >>> _
 25
-
-
 ```
 
 ### Reverse a word
