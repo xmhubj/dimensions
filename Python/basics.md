@@ -7,7 +7,7 @@
 25
 ```
 
-- `sys` args
+- `sys` argv
 
 ### Reverse a word
 
