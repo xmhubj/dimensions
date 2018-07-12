@@ -72,3 +72,26 @@ for name, items in itertools.groupby(portfolio, key=lambda hodling: holding['nam
        print('      ', it)
 
 ```
+
+### Module Basics
+```
+# only run can be seen here,but the simple module is fully loaded
+from simple import run
+
+# equivalent statements are
+improt simpe
+run = simple.run()
+
+# Imported Modules are cached..the second import does not load the module again
+import simple
+import sys
+sys.modules['simple']
+sys.path   # python path
+
+del sys.modules['simple']
+
+# gloabl variable `__name__`
+if __name__ = '__name__':
+    # do something
+```
+
