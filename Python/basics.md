@@ -7,6 +7,8 @@
 25
 ```
 
+- `__mro__`    # method resolution order
+- `__main__`
 - `sys` argv
 
 ### Reverse a word
@@ -44,6 +46,22 @@ https://matplotlib.org/tutorials/index.html
 - python -i <python_script.py>
 - import pdb
 - pdb.pm()
+
+> Make Objects printable and debuggable
+```
+class Holding(object):
+    def __init__(self, name, date, shares, price):
+        self.name = name
+        self.date = date
+        self.shares = shares
+        self.price = price
+    
+    def __repr__(self):     # representation method
+        return 'Holding({!r},{!r},{!r},{!r})'.format(self.name, self.date, self.shares, self.price)
+        
+    def __str__(self):
+        return ''
+```
 
 ### Sorting and Grouping
 ```
@@ -161,4 +179,14 @@ class Child(Parent):                   # Parent as the paremeter
         
 class Child2(Parent1, Parent2):         # inheritance from multiple parents
     def...
+```
+
+> Abstract Base Classes(ABC)
+```
+import sys
+from abc import ABC, abstractmethod
+
+@abstractmethod
+def headings(self, headers):
+    pass    
 ```
