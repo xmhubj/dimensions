@@ -156,7 +156,7 @@ class Data(object):
 ```
 
 ### Inheritance
-> Building an extensible library
+- Building an extensible library
 
 ```
 class Parent(object):
@@ -181,7 +181,7 @@ class Child2(Parent1, Parent2):         # inheritance from multiple parents
     def...
 ```
 
-> Abstract Base Classes(ABC)
+- Abstract Base Classes(ABC)
 ```
 import sys
 from abc import ABC, abstractmethod
@@ -189,4 +189,25 @@ from abc import ABC, abstractmethod
 @abstractmethod
 def headings(self, headers):
     pass    
+```
+
+### Making a Custom Context Manager
+Resource management:
+    - open, use and close
+    - acquire, use and releaes
+```
+class Manager(object):
+    def __enter__(self):
+        print("___enter__")
+    def __exit__(self):
+        print("__exit__")
+        
+improt manager
+m = manager.Manager()
+with m:
+    print("I'm here!)
+    
+__enter__
+I'm here!
+__exit__
 ```
