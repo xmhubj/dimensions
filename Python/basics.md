@@ -136,3 +136,29 @@ class Data(object):
         return cls(t.tm_year, t.tm_mon, t.tm_today)
         
 ```
+
+### Inheritance
+> Building an extensible library
+
+```
+class Parent(object):
+    def __init__(self, value):
+        ...
+    def spam(self):
+         print('Parent.spam', self.value)
+        
+class Child(Parent):                   # Parent as the paremeter
+    def __init__(self, value, extra):
+        self.extra = extra;
+        super().__init__(value)        # Initialize parent
+        
+    def yow(self):
+        print('Yow')
+        
+    def spam(self):
+        print('Child.spam')
+        super().spam()                  # invokes the original method
+        
+class Child2(Parent1, Parent2):         # inheritance from multiple parents
+    def...
+```
