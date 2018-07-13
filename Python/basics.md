@@ -95,3 +95,37 @@ if __name__ = '__name__':
     # do something
 ```
 
+### Package
+
+```
+mkdir <package_name>  # and move your python files into it
+
+touch __init__.py  # init file of a package
+
+# within the package use package-relative import
+import <package_name>.reader
+from . import reader
+
+# Lifting symbols from submodules
+from .port import read_portfolio
+from .reader import read_csv
+
+```
+
+### Classes and Objects
+```
+getattr(claz, 'name')       # equals claz.name
+setattr(claz, 'name', 50)   # equals claz.name = 50
+
+# class method
+class Data(object):
+    def __init__(self, year, month, day):
+        self.year =year
+        self.month = month
+        self.day = day
+        
+    @classmethod                        # class method declaration
+    def from_string(cls, s):
+        parts = s.split('-')
+        return cls(int(parts[0]), int(parts[1]), int(parts[2]))
+```
