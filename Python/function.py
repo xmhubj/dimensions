@@ -31,3 +31,7 @@ def fucntion_name(*, key=value):
     By making `*` as the first parameter we can pervent any positional arguments from being used.
     """
     passs
+
+    
+s = lambda x: "" if x == 1 else "s"
+print("{0} file{1} processed".format(count, s(count)))
