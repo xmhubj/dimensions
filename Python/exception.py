@@ -33,3 +33,17 @@ def portfolio_cost(filename, errors='warn'):
 
 total = portfolio_cost('data/portfolio.csv', errors='silent')
 print('Total cost:', total)
+
+
+fh = None
+try:
+    fh = open(filename, 'w', encoding="utf-8")
+    fh.write(html)
+except EnvironmentError as err:
+    print("Error: ", err)
+else:
+    print("Saved skeleton: ", filename)
+finally:
+    if fh is not None:
+        fh.close()
+    
