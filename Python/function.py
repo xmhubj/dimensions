@@ -19,3 +19,15 @@ def portfolio_cost(filename):
 
 total = portfolio_cost('data/portfolio.csv')
 print('Total cost:', total)
+
+def function_name(a, b, *, key=value):
+    """
+    Use `*` as a parameter in its own right, to signify that there is no positional arguments after `*`
+    """
+    pass
+
+def fucntion_name(*, key=value):
+    """
+    By making `*` as the first parameter we can pervent any positional arguments from being used.
+    """
+    passs
