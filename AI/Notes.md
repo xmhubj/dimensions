@@ -32,13 +32,14 @@
   - IBM Watson
   
 ## Neural Network
-	- Features -> Standard NN
-	- Autonomous driving -> complex, customized, hybird neural network
-  - Deep Neural Network
-  - Convolutional Neural Network(CNN)
-    - image
-  - Recurrent Neural Network(RNN)
-    - Sequence data, like audio, Machine translation
+
+- Features -> Standard NN
+- Autonomous driving -> complex, customized, hybird neural network
+- Deep Neural Network
+- Convolutional Neural Network(CNN)
+  - image
+- Recurrent Neural Network(RNN)
+  - Sequence data, like audio, Machine translation
 
 ### Binary Classification
   - Notation
@@ -60,6 +61,11 @@
     - forward propagation: left-to-right computation
     - backward propagation: right-to left computation
     
-    
-    
+ ## Python
+ 
+- numpy
+- rank 1 array, column vector, row vector
+- gradient descent converges faster after normalization
+
+
     
