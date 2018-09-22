@@ -43,8 +43,19 @@ The rule of thumbs:
   - L1 regularization, ||w||
 - Neural network
   - Frobenius norm
+  - Dropout regularization
+  - Data augmentation, like disortion the pictures
+  - Early stopping
+Orthogonalization, think about one task at one time:
+- Optimize the cost function
+  - Gradient decrease
+- Not overfitting
+  - Regularization
 
-
-  
-  
+# Setting up your optimization problem
+- Normalize your inputs, training sets, mean-0 normalizing you input features
+- Vanishing/Exploding gradients
+- Weights initialization for NN
+- Numerical approximation of gradients
+- Gradient checking helps me tons of times, don't use in training, only to debug
 
