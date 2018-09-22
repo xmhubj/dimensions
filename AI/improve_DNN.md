@@ -37,5 +37,14 @@ The rule of thumbs:
   - Regularization
   - NN architecture search
   
-# Regularization
+# Regularizing your neural network
+- Logistic regression
+  - L2 regularization, norm - ||w||2, perferred
+  - L1 regularization, ||w||
+- Neural network
+  - Frobenius norm
+
+
+  
+  
 
