@@ -17,4 +17,18 @@
 - Adequate searching
 - Appropriate/right scale for hyperparameters
 
-#  
+#  Re-test hyperparameters occasionally
+- Pandas vs Caviar
+
+# Batch Normalization
+- Normalizing inputs to speed up learning
+- Not just the input layer, but all neural network layers
+- As regularization
+- Each mini-batch is scaled by the mean/variance computed on just that mini-batch
+- Has slightly regularization effect. Using big mini-batch size can reduce the regularization effect.
+- it adds some noise to the values zl
+
+# Multi-class Classification
+
+- Softmax activiation function
+- 
