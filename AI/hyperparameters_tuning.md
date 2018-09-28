@@ -31,4 +31,19 @@
 # Multi-class Classification
 
 - Softmax activiation function
-- 
+- Softmax regression
+- Softmax classifier
+
+# Deep Learning frameworks
+
+- Caffe
+- CNTK
+- DL4J
+- Keras
+- Lasagne
+- mxnet
+- PaddlePaddle
+- Tensorflow
+- Theano
+- Torch
+
