@@ -47,3 +47,4 @@
 - Theano
 - Torch
 
+Defined in `Keras` -> trained with `Tensorflow` -> Using `IBM Watson Studio`
